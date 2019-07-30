@@ -83,7 +83,7 @@ function createWindow(uid) {
   // Create the browser window.
 
   var kiosk = process.env.KISOSK;
-  mainWindow = new BrowserWindow( { webPreferences: {nodeIntegration: false}, kiosk: false, frame: false});
+  mainWindow = new BrowserWindow( { webPreferences: {nodeIntegration: false}, kiosk: true, frame: false});
 
   // and load the index.html of the app.
   mainWindow.loadURL('http://www.displayapp.site/display/' + uid)

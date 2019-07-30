@@ -10,7 +10,8 @@
     "make": "electron-forge make",
     "publish": "electron-forge publish",
     "lint": "echo \"No linting configured\"",
-    "win": "electron-forge publish --platform=win32 --arch=ia32"
+    "win-pub": "electron-forge publish --platform=win32 --arch=ia32",
+    "win-make": "electron-forge make --platform=win32 --arch=ia32"
   },
   "keywords": [],
   "author": {
@@ -49,9 +50,11 @@
           "config": {
             "repository": {
               "owner": "jackminchin",
-              "name": "displayapp-display"
+              "name": "displayapp-display",
+              "authToken": "adad947aa2f5a80b9a506a252a6a1c6f0f4e8287"
             },
-            "prerelease": "true"
+            "prerelease": "true",
+            "authToken": "adad947aa2f5a80b9a506a252a6a1c6f0f4e8287"
           }
         }
       ]
